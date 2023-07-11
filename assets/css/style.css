@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    line-height: 125%;
+    position:relative;
+    box-sizing:content-box;
+}
+*:after, *:before{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #113f67;
+    color:#e7eaf6;
+    position:relative;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.header{
+    height:64px;
+    padding:5px 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    line-height: 64px;
+    background-color: #255681;
+    z-index:9999;
+}
+.tablecontainer{
+    display:flex;
+flex-direction: column;
+width: 100%;
+margin: 0 auto;
+max-width: 1280px;
+}
+.boxbody{
+    max-width:1280px;
+    justify-content:space-evenly;
+    justify-items: flex-start;
+}
+.boxcard{
+    flex:1;
+    box-sizing: content-box;
+    min-width: 280px;
+    margin:10px 5px;
+    border:5px solid hsla(208, 65%, 34%, 50%);
+    padding:10px;
+    border-radius: 20px 20px 0 0;
+    background-color: #38598b;
+    flex-grow: unset;
+}
+.boxcard div.title{
+    font-size:24px;
+    line-height: 32px;
+    border-bottom:1px solid hsl(208, 55%, 33%);
+
+}
+.boxcontainer{
+display:flex;
+flex-direction: row;
+width: 100%;
+flex-wrap: wrap;
+}
+.jc_right{
+    justify-content: end;
+}
+.jc_center{
+    justify-content: center;
+}
+.jc_left{
+    justify-content: left;
+}
+.box{
+    margin:5px;
+}
+.small{
+flex:1;
+}
+.medium{
+    flex:3;
+}
+.large{
+    flex:6;
+}
+.boxcontainer li{
+    list-style: none;
+    margin-right:20px;
+    line-height: 54px;;
+}
+.spaceout{
+    justify-content: space-between;
+}
+.btn{
+    height:42px; 
+    line-height: 42px;
+    padding:5px 10px;
+}
+.primary{
+    background-color:#5f5dbd;
+    color:#e7eaf6;
+}
+.footer{
+    height:60px;
+    padding:5px 20px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+div.container{
+    min-height:100vh;
+    margin-top:80px;
+    margin-bottom:80px;
+    z-index:1;
+    padding: 10px 20px;
+}
+.first-color { 
+	background: #e7eaf6; 
+}
+	
+.second-color { 
+	background: #a2a8d3; 
+}
+
+.third-color { 
+	background: #38598b; 
+}
+
+.fourth-color { 
+	background: #113f67; 
+}
