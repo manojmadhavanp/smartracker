@@ -47,7 +47,7 @@ max-width: 1280px;
     margin:10px 5px;
     border:5px solid hsla(208, 65%, 34%, 50%);
     padding:10px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 5px;
     background-color: #38598b;
     flex-grow: unset;
 }

@@ -34,7 +34,7 @@
                 <a herf="#" class=" btn primary jc_right">Add New Tracker</a>
                 </div>
             </div>
-            <div class="boxbody boxcontainer">
+            <div id="trackerbody" class="boxbody boxcontainer">
                     <div class="boxcard">
                         <div class="title">Title 1</div>
                         <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem temporibus earum eum neque similique vel consectetur deleniti animi atque esse vitae, at ab sapiente accusantium, repellat ducimus, odio tempore.</div>
@@ -77,6 +77,15 @@
     <div class="footer">
         <p style="text-align: center; opacity: 0.5;">Made By: Manoj Madhavan</p>
     </div>
-    
+    <script type="text/javscript" src="./assets/js/TrackerManager.js"></script>
+  
+    <script>
+        document.addEventListener("load", function(){
+            var TrackerManager = new TrackerManager();
+            TrackerManager.get();
+        })
+       
+     
+    </script>
 </body>
 </html>
