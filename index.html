@@ -77,13 +77,13 @@
     <div class="footer">
         <p style="text-align: center; opacity: 0.5;">Made By: Manoj Madhavan</p>
     </div>
-    <script type="text/javscript" src="./assets/js/TrackerManager.js"></script>
+    <script src="./assets/js/TrackerManager.js" type="text/javascript" ></script>
   
     <script>
-        document.addEventListener("load", function(){
-            var TrackerManager = new TrackerManager();
-            TrackerManager.get();
-        })
+        var context = {};
+            var TrackerManager = new Tracker_Manager(context);
+            TrackerManager.fetch(1);
+        
        
      
     </script>
