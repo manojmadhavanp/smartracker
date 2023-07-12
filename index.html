@@ -12,18 +12,22 @@
 <body>
     <div class="header">
         <div class="boxcontainer">
-            <div class="box small">
+            <div class="box">
                 <img src="./assets/img/trackerlogo.png" />
             </div>
-            <div class="box small"></div>
+            
             <div class="box large">
-                <ul class="boxcontainer jc_right">
+                <ul class="boxcontainer jc_center">
                     <li>About</li>
                     <li>Pricing</li>
-                    <li>Feedback</li>
                 </ul>
             </div>
-
+            <div class="box">
+                <ul class="boxcontainer jc_right">
+                    <li><a href="./login.html" class="btn primary">Login</a></li>
+                    <li><a href="./register.html" class="btn primary">Register</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -80,6 +84,8 @@
     <script src="./assets/js/TrackerManager.js" type="text/javascript" ></script>
   
     <script>
+         const pathArray = window.location.pathname.split("/");
+        console.log(pathArray);
         var context = {};
             var TrackerManager = new Tracker_Manager(context);
             TrackerManager.fetch(1);
